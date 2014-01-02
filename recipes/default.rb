@@ -10,7 +10,7 @@ include_recipe "supervisor"
 
 # Install the statsd app
 
-directory "#{node[:statsd][:base]}" do
+directory node[:statsd][:base] do
   owner node[:statsd][:user]
   group node[:statsd][:group]
 end
