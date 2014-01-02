@@ -1,8 +1,3 @@
-#
-# Cookbook Name:: statsd
-# Recipe:: default
-#
-
 include_recipe "git"
 include_recipe "nodejs"
 include_recipe "supervisor"
