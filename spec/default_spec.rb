@@ -18,11 +18,11 @@ describe 'statsd::default' do
     expect(chef_run).to include_recipe('supervisor')
   end
 
-  it('should create /opt/statsd directory') do
+  it 'should create /opt/statsd directory' do
     expect(chef_run).to create_directory('/opt/statsd')
   end
 
-  it('should create /opt/statsd/config.js') do
+  it 'should create /opt/statsd/config.js' do
     expect(chef_run).to render_file('/opt/statsd/config.js')
   end
 end
