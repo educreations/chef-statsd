@@ -1,8 +1,3 @@
-#
-# Cookbook Name:: statsd
-# Attributes:: statsd
-#
-
 default[:statsd][:user] = 'statsd'
 default[:statsd][:group] = 'statsd'
 

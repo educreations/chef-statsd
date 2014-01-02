@@ -3,4 +3,4 @@ metadata
 
 cookbook 'git'
 cookbook 'nodejs'
-cookbook 'supervisor'
+cookbook "supervisor",          github: "poise/supervisor", ref: "ffd88b59e3df97613b9ecfd53d489f6715551755"
