@@ -41,7 +41,7 @@ end
 
 supervisor_service "statsd" do
   action :enable
-  command "/usr/bin/node #{node[:statsd][:base]}/stats.js #{node[:statsd][:config]}"
+  command "node #{node[:statsd][:base]}/stats.js #{node[:statsd][:config]}"
   directory node[:statsd][:base]
   autostart true
   autorestart true
