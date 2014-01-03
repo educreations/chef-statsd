@@ -10,6 +10,15 @@ directory node[:statsd][:base] do
   group node[:statsd][:group]
 end
 
+group node[:statsd][:group]
+
+user node[:statsd][:user] do
+  shell "/bin/sh"
+  home node[:statsd][:base]
+  gid node[:statsd][:group]
+  system true
+end
+
 
 git node[:statsd][:base] do
   repository node[:statsd][:source_url]
